@@ -1,3 +1,15 @@
 % ========================================
 %      Add custom packages and styles     
 % ========================================
+
+\usepackage{float}
+
+\newcommand\GrayBox[1]{%
+    \begin{tcolorbox}[%
+        enhanced,%
+        frame hidden,%
+        width=\textwidth%
+    ]
+    #1
+    \end{tcolorbox}%
+}

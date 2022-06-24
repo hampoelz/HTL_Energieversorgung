@@ -4,30 +4,61 @@
 \usepackage{styles/main}
 \usepackage{styles/custom}
 
-% \geometry{top=20mm,bottom=20mm}
+\geometry{top=20mm,bottom=20mm}
 
-\title{}
-\confidential{\textbf{}}
+\title{Elektrische Energieversorgung}
+\confidential{\textbf{Zusammenfassung}}
 
-\author{}
-\company{}
-\date{}
+\author{Rene Hampölz}
+\company{HTBLA Weiz}
+\date{2022}
 
 \begin{document}
 \maketitle
 
-\IncludeHistoryTimeline
-
 \tableofcontents
-% \listoffigures
 \clearpage
 
 \settocdepth{subsection}
+\input{src/01-Netze.tex}
+\clearpage
 
-% \clearpage
-% 
-% \nocite{*}
-% \printbibliography
+\input{src/02-Verbund-Inselbetrieb.tex}
+\clearpage
+
+\input{src/03-Systemkomponenten.tex}
+\clearpage
+
+\input{src/04-Hochspannungs-Gleichstrom-Ubertragung.tex}
+\clearpage
+
+\input{src/05-Synchrongeneratoren.tex}
+\input{src/06-Asynchronmaschinen.tex}
+\clearpage
+
+\input{src/07-Transformatoren.tex}
+\clearpage
+
+\input{src/08-Freileitungen.tex}
+\clearpage
+
+\input{src/09-Kabel.tex}
+\clearpage
+
+\settocdepth{subsubsection}
+\input{src/10-Schaltanlagen.tex}
+\clearpage
+
+\settocdepth{subsection}
+\input{src/11-Kompensationsanlagen.tex}
+\clearpage
+
+\listoffigures
+
+\nocite{*}
+\printbibliography
+
+\vspace{5em}
 
 \IncludeHistoryTable
 
